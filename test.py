@@ -12,3 +12,10 @@ r = temp
 print("pi: ", pi)
 print("r: ", r)
 
+age = 10
+if age>=21:
+    print("You are an adult")
+elif age >= 18 :
+    print(" You are almost an adult")
+else: 
+    print("You are a minor")
