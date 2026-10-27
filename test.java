@@ -23,5 +23,14 @@ public class test {
 			System.out.printf("%d is not a leap year!\n", year);
 		}
 
-	}
-}
+		int age =20;
+		if (age>=21){
+			System.out.println("You are an adult");
+		}
+		else if ( age>=18){
+			System.out.println("You are almost an adult.");
+		}
+		else {
+			System.out.println("You are a minor"); }
+
+	} }
