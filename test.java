@@ -26,9 +26,9 @@ public class test {
 		if (age >= 21) {
 			System.out.println("You are an adult");
 		} else if (age >= 18) {
-			System.out.println("You are almost an adult.");
+			System.out.println("You are almost an adult in a.");
 		} else {
-			System.out.println("You are a minor");
+			System.out.println("You are a minor ");
 		}
 
 		int n1 = 3;
