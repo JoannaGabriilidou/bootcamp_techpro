@@ -42,5 +42,11 @@ public class test {
 		} else {
 			System.out.printf("The largest number between %d, %d and %d is: %d\n", n1, n2, n3, n3);
 		}
+
+		int i;
+
+		for (i = 10; i >= 0; i--) {
+			System.out.printf("%d\n", i);
+		}
 	}
 }
