@@ -45,7 +45,7 @@ public class test {
 
 		int i;
 
-		for (i = 10; i >= 0; i--) {
+		for (i = 5; i >= 0; i--) {
 			System.out.printf("%d\n", i);
 		}
 	}
