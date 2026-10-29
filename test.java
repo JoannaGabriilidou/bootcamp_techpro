@@ -59,9 +59,13 @@ public class test {
 			}
 		}
 
-		int input = 5;
-		int output = factorial(input);
-		System.out.println(output);
+		int input1 = 5;
+		int output1 = factorial(input1);
+		System.out.println(output1);
+
+		int input2 = 5;
+		int output2 = factorial_re(input2);
+		System.out.println(output2);
 
 	}
 
@@ -71,5 +75,12 @@ public class test {
 			result = result * i;
 		}
 		return result;
+	}
+
+	public static int factorial_re(int n) {
+		if (n == 1) {
+			return 1;
+		}
+		return n * factorial_re(n - 1);
 	}
 }
