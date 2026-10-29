@@ -26,9 +26,9 @@ public class test {
 		if (age >= 21) {
 			System.out.println("You are an adult");
 		} else if (age >= 18) {
-			System.out.println("You are almost an adult in a.");
+			System.out.println("You are almost an adult.");
 		} else {
-			System.out.println("You are a minor ");
+			System.out.println("You are a minor");
 		}
 
 		int n1 = 3;
@@ -45,8 +45,18 @@ public class test {
 
 		int i;
 
-		for (i = 5; i >= 0; i--) {
+		for (i = 1; i <= 20; i++) {
 			System.out.printf("%d\n", i);
+			if (i % 3 == 0 && i % 5 == 0) {
+				System.out.println("fizzbuzz");
+				continue;
+			}
+			if (i % 3 == 0) {
+				System.out.println("fizz");
+			}
+			if (i % 5 == 0) {
+				System.out.println("buzz");
+			}
 		}
 	}
 }
