@@ -67,6 +67,9 @@ public class test {
 		int output2 = factorial_re(input2);
 		System.out.println(output2);
 
+		int[] array = { 5, 9, 12, 16, 19 };
+		System.out.printf("%d\n", binary_find(array, 16));
+
 	}
 
 	public static int factorial(int n) {
@@ -82,5 +85,42 @@ public class test {
 			return 1;
 		}
 		return n * factorial_re(n - 1);
+	}
+
+	public static int linear_find(int[] array, int key) {
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] == key) {
+				return 1;
+			}
+		}
+		return 0;
+	}
+
+	public static int binary_find(int[] array, int key) {
+		int start = 0;
+		int stop = array.length - 1;
+		if (array[start] == key)
+			return 1;
+		if (array[stop] == key)
+			return 1;
+		if (array[start] > key)
+			return 0;
+		if (array[stop] < key)
+			return 0;
+
+		int midpoint = (start + stop) / 2;
+
+		while (array[midpoint] == key) {
+			if (array[midpoint] > key) {
+				stop = midpoint;
+			} else {
+				start = midpoint;
+			}
+			midpoint = (start + stop) / 2;
+			if (midpoint == start || midpoint == stop)
+				return 0;
+		}
+
+		return 1;
 	}
 }
